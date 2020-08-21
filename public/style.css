@@ -43,6 +43,7 @@ body {
 /* Slider*/
 .carousel-item {
   height: 100vh;
+  background-size: auto;
 }
 .carousel-caption {
   position: absolute;
@@ -137,7 +138,7 @@ div.row .noPadding [class*=col-sm-4] {
   cursor: zoom-in;
 }
 .portfolio {
-  overflow:;
+  overflow: visible;
 }
 
 .card {
@@ -177,7 +178,10 @@ hr.socket {
 /*   */
 
 @media (max-width: 767px) {
-  
+  .carousel-item{
+    background-size: cover;
+    height: 50vh;
+  }
   .carousel-caption h1 {
     font-size: 2.3rem;
     letter-spacing: .15rem;
@@ -190,7 +194,7 @@ hr.socket {
   .btn-lg {
     font-size: 1rem;
   }
-  .narrow hi {
+  .narrow h1 {
     font-size: 1.5rem;
 
   }
@@ -208,10 +212,39 @@ hr.socket {
     background-color: #1EBBA3;
     color: white;
   }
-
-
-
 }
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 50vh;
+    background-size: cover;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 20%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  .carousel-caption h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+  }
+  .btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: .55rem;
+  }
+ }
 
 /*============ BOOTSTRAP BREAK POINTS:
 
